@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+<h2>{{category.name}}:</h2>
+{{!-- Each product in the category  --}}
+{{#each category_products}}
+<ul>
+    <li><a href="{{url}}">{{name}}</a></li>
+    <p>Description: {{description}}</p>
+</ul>
+{{/each}}
+<p>
+    <a href="{{category.url}}/delete">Delete category</a>
+</p>

@@ -1,0 +1,15 @@
+<h1>{{title}}</h1>
+<ul>
+    <li><a href="/category/products">Products List</a></li>
+    <li><a href="/category/categorys">Categorys List</a></li>
+</ul>
+
+{{#if error}}
+<p>Error retrieving data</p>
+{{else}}
+<h2>Inventory</h2>
+<ul>
+    <li>Number of Products: {{productCount}}</li>
+    <li>Number of Categories: {{categoryCount}}</li>
+</ul>
+{{/if}}
